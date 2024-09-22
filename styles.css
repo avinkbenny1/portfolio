@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Merriweather", system-ui;
+}
+
+#container{
+    width: 100%;
+    height: 100vp;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+margin-left: 100px;
+}
+.logo{
+    width: 140px;
+}
+.list-item{
+    list-style: none;
+    display: inline;
+    margin: 0px 25px;
+
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.link:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+.homecontent{
+    margin: 13% 0px 0px 8%;
+}
+
+#fname{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Playwrite CU", cursive;
+}
+#lname{
+    font-family: "Playwrite CU", cursive;
+    color: rgb(233, 199, 8);
+
+}
+#userDetail{
+    line-height: 1.2;
+}
+#download{
+text-decoration: none;
+background-color: black;
+color: white;
+padding: 10px;
+border-radius: 10px;
+display: inline-block;
+margin-top:30px;
+}
+.homeimage{
+    height: 75%;
+    width: 45%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+    
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform:translateX(-50%);
+    transition: bottom 2s,left 1s;
+}
+.homeimage:hover #shape{
+    bottom: 60px;
+}
+.homeimage:hover #girl{
+    left:30%;
+}
+#about{
+    margin:15% 8% 0px 8%;
+}
+.sectionhead{
+    text-align: center;
+
+}
+.mainhead{
+    font-size: 30px;
+    
+}
+.subhead{
+    font-size: 20px;
+    color:green;
+}
+.aboutbody{
+      margin-top:10px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
+      align-items: center; 
+
+}
+.img1{
+    width:380px;
+}
+
+.aboutcontent{
+    font-size: 20px;
+    text-align: justify;
+}
+.informations{
+    margin-top: 1.3rem;
+}
+.infobox{
+    margin-bottom: 10px;
+
+}
+.infobox>span{
+    margin-left: 10px;
+}
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px ;
+    
+}
+.barhead, .barpercent{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlbar{
+    background-color: orange;
+    width: 83%;
+}
+.cssbar{
+    background-color: orange;
+    width: 75%;}
+    .jsbar{
+        background-color: orange;
+        width: 80%;}
+.myskill{
+    width: 100%;
+}
+.Contact{
+    margin: 8% 8% 0px 8% ;
+}
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: solid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.barands{
+    color: black ;
+    font-size: 2rem;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right, red, orange,yellow);
+}
+
+.icon:hover .barands{
+    color: white;
+    animation: rotate 3s;
+
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(40deg);
+    }
+    20%{
+        transform: rotate(-40deg);
+    }
+    40%{
+        transform: rotate(40deg);
+    }
+    60%{
+        transform: rotate(-40deg);
+    }
+    80%{
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(-40deg);
+    }
+}
+footer{
+    margin-top: 8%;
+}
+#copyright{
+    text-align: center;
+    font-weight: 600px;
+
+}
+.uparrow{
+    float:right;
+    margin-top:-30px;
+}
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: azure;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
